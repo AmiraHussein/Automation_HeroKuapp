@@ -11,8 +11,6 @@ public class SecureAreaPage
 
     By successMessageLocator=By.id("flash");
 
-
-
     public String getSuccessMessage() {
         return driver.findElement(successMessageLocator).getText();
     }
