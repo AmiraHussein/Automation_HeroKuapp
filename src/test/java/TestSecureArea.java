@@ -1,2 +1,2 @@
-public class TestSecureArea {
+public class TestSecureArea extends BaseTest{
 }
