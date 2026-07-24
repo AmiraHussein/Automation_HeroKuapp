@@ -1,11 +1,14 @@
+package baseTest;
+
+import Pages.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
-    WebDriver driver;
-    HomePage homePage;
+   public static WebDriver driver;
+    protected HomePage homePage;
 
     @BeforeMethod
     public void setup()

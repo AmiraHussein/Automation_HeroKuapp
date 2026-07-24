@@ -1,6 +1,8 @@
+package testCases;
+
+import Pages.JavaScriptAlertPage;
+import baseTest.BaseTest;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class TestJavaScriptAlert extends BaseTest

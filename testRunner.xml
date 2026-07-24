@@ -1,0 +1,12 @@
+<suite name="all">
+    <listeners>
+        <listener
+                class-name="listeners.TestListener"/>
+    </listeners>
+    <test name="test">
+        <classes>
+            <class name="testCases.TestLogin"></class>
+            <class name="testCases.TestJavaScriptAlert"></class>
+        </classes>
+    </test>
+</suite>

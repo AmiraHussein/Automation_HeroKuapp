@@ -1,12 +1,10 @@
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-import org.testng.thread.IThreadWorkerFactory;
+package testCases;
 
-import javax.imageio.plugins.tiff.TIFFImageReadParam;
+import Pages.LoginPage;
+import Pages.SecureAreaPage;
+import baseTest.BaseTest;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class TestLogin extends BaseTest
 {
@@ -34,7 +32,7 @@ public class TestLogin extends BaseTest
         loginPage=new LoginPage(driver);
         secureAreaPage=new SecureAreaPage(driver);
         homePage.clickOnFormAuthenticationLink();
-        loginPage.Login("invalid","SuperSecretPassword!");
+        loginPage.Login("userName","password");
         String actualMessage, expectedMessage;
         expectedMessage="Your username is invalid!";
         actualMessage=loginPage.getErrorMessage();
