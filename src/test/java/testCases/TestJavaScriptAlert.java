@@ -7,7 +7,8 @@ import org.testng.annotations.Test;
 
 public class TestJavaScriptAlert extends BaseTest
 {
-    @Test
+
+    @Test(dependsOnGroups ={"login"})
     public void acceptJSAlert()
     {
 

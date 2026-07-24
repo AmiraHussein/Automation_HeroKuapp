@@ -37,7 +37,7 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
 
-        test.pass("Test Passed");
+        test.pass("Testcase Passed");
     }
 
     @Override

@@ -9,4 +9,5 @@
             <class name="testCases.TestJavaScriptAlert"></class>
         </classes>
     </test>
+
 </suite>
